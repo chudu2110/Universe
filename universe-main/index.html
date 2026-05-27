@@ -36,6 +36,8 @@
 
         let renderer = new THREE.WebGLRenderer();
         renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.domElement.setAttribute("aria-label", "Interactive universe animation");
+        renderer.domElement.setAttribute("role", "img");
         document.body.appendChild(renderer.domElement);
 
         window.addEventListener("resize", () => {
